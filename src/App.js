@@ -1,6 +1,7 @@
 import React from 'react';
 import CreateNewPost from './Components/CreateNewPost';
 import Posts from './Components/Post';
+import ModifyPost from './Components/ModifyPost';
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <CreateNewPost />
       <Posts />
+      <ModifyPost />
     </div>
   );
 };
