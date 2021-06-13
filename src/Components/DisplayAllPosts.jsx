@@ -5,6 +5,7 @@ const DisplayAllPosts = () => {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [allPosts, setAllPosts] = useState([]);
+    const [isCreateNewPost, setIsCreateNewPost] = useState(false);
 
     // Initialize useRef
     const getTitle = useRef();
@@ -12,12 +13,15 @@ const DisplayAllPosts = () => {
 
     const savePostTitleToState = event => {
         setTitle(event.target.value);
-        console.log(title);
+        // console.log(title);
     };
     const savePostContentToState = event => {
         setContent(event.target.value);
-        console.log(content);
+        // console.log(content);
     };
+    const toggleCreateNewPost = () => {
+        setIsCreateNewPost(!isCreateNewPost);
+    }
 
     const savePost = (event) => {
         event.preventDefault();
@@ -25,20 +29,22 @@ const DisplayAllPosts = () => {
         console.log(allPosts);
         getTitle.current.value = "";
         getContent.current.value = "";
+        toggleCreateNewPost()
         
     };
-    
-    return (
-    <>
-    <CreateNewPost
-    savePostTitleToState = {savePostTitleToState}
-    savePostContentToState = {savePostContentToState} 
-    getTitle = {getTitle}
-    getContent = {getContent}
-    savePost = {savePost}
-    />
-    </>
-    )
+    if (isCreateNewPost) {
+        return (
+            <>
+                <CreateNewPost
+                    savePostTitleToState = {savePostTitleToState}
+                    savePostContentToState = {savePostContentToState} 
+                    getTitle = {getTitle}
+                    getContent = {getContent}
+                    savePost = {savePost}
+                />
+            </>
+        );
+    }
 };
 
 
