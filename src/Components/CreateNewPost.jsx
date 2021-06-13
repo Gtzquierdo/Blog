@@ -3,7 +3,7 @@ const CreateNewPost = props => {
     return (
         // React.fragment is short syntax than div and takes up less space
         <>
-            <form>
+            <form onSubmit={props.savePost}>
                 <h1>Create New Post</h1>
                 <input type="text" onChange={props.savePostTitleToState} placeholder="title" size="39" required ref={props.getTitle}></input>
                 <br />
