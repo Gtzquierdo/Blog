@@ -19,12 +19,13 @@ const DisplayAllPosts = () => {
         console.log(content);
     };
 
-    const savePost = () => {
-        const id = Date.now();
-        setAllPost([...allPost, {title, content, id}]);
-        setTitle("");
-        setContent("");
-        console.log(allPost);
+    const savePost = (event) => {
+        event.preventDefault();
+        setAllPosts([...allPosts, {title, content}]);
+        console.log(allPosts);
+        getTitle.current.value = "";
+        getContent.current.value = "";
+        
     };
     
     return (
@@ -32,7 +33,8 @@ const DisplayAllPosts = () => {
     <CreateNewPost
     savePostTitleToState = {savePostTitleToState}
     savePostContentToState = {savePostContentToState} 
-    
+    getTitle = {getTitle}
+    getContent = {getContent}
     />
     </>
     )
