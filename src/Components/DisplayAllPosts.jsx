@@ -45,6 +45,15 @@ const DisplayAllPosts = () => {
             </>
         );
     }
+
+    return (
+        <>
+            <h2>All Posts</h2>
+            <br/>
+            <br/>
+            <button onClick={toggleCreateNewPost}>Create New</button>
+        </>
+    )
 };
 
 
