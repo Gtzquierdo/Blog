@@ -1,4 +1,5 @@
 import './navbar.css';
+import '../Images/propic.png';
 
 const NavBar = () => {
     return (
@@ -17,7 +18,10 @@ const NavBar = () => {
                         <li className="navListItem">LOGOUT</li>
                     </ul>
                 </div>
-                <div className="navRight"></div>
+                <div className="navRight">
+                    <img src="../Images/propic.png" alt="profilePic"></img>
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
         </>
     );
