@@ -12,9 +12,47 @@
 
 .navLeft, .navRight{
     flex: 3;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navCenter{
     flex: 6;
+}
+
+.navIcon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+}
+
+.navImg{
+    width: 40px;
+    height:  40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navListItem{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.navSearchIcon{
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    margin-left: 15px;
 }

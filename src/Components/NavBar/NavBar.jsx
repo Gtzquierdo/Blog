@@ -1,13 +1,12 @@
 import './navbar.css';
-import '../Images/propic.png';
 
 const NavBar = () => {
     return (
         <>
             <div className="navbar">
                 <div className="navLeft">
-                    <i class="fas fa-phone"></i>
-                    <i class="fas fa-envelope"></i>
+                    <i className="navIcon fas fa-phone"></i>
+                    <i className="navIcon fas fa-envelope"></i>
                 </div>
                 <div className="navCenter">
                     <ul className="navList">
@@ -19,8 +18,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navRight">
-                    <img src="../Images/propic.png" alt="profilePic"></img>
-                    <i class="fas fa-search"></i>
+                    <img src="" alt="profilePic"></img>
+                    <i className="navSearchIcon fas fa-search"></i>
                 </div>
             </div>
         </>
