@@ -18,8 +18,14 @@ const Sidebar = () => {
                     <li className="sidebarListItem">Music</li>
                     <li className="sidebarListItem">Sports</li>
                     <li className="sidebarListItem">Tech</li>
-
                 </ul>
+            </div>
+            <div className="sidebarItem">
+                <span className="sidebarTitle">Follow Us</span>
+                <div className="sidebarSocial">
+                    <i className="sidebarIcon fas fa-phone"></i>
+                    <i className="sidebarIcon fas fa-envelope"></i>
+                </div>
             </div>
         </div>
     );
