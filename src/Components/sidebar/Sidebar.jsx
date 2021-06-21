@@ -12,12 +12,12 @@ const Sidebar = () => {
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">Categories</span>
-                <ul className="sidebarList">
-                    <li className="sidebarListItem">Life</li>
-                    <li className="sidebarListItem">Family</li>
-                    <li className="sidebarListItem">Sports</li>
-                    <li className="sidebarListItem">Tech</li>
-                </ul>
+                    <ul className="sidebarList">
+                        <li className="sidebarListItem">Life</li>
+                        <li className="sidebarListItem">Family</li>
+                        <li className="sidebarListItem">Sports</li>
+                        <li className="sidebarListItem">Tech</li>
+                    </ul>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">Follow Us</span>
