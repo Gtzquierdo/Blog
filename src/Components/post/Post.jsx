@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './post.css';
 
 const Post = ({img}) => {
@@ -5,7 +6,7 @@ const Post = ({img}) => {
         <div className="post">
             <img
                 className="postImg"
-                src=""
+                src="{img}"
                 alt="BlogPost"
             />
             <div className="postInfo">
