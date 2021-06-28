@@ -1,6 +1,6 @@
-import Header from "../../header/Header";
-import Sidebar from "../../sidebar/Sidebar";
-import Posts from "../../posts/Posts"
+import Header from "../../Components/header/Header";
+import Sidebar from "../../Components/sidebar/Sidebar";
+import Posts from "../../Components/posts/Posts"
 import './home.css';
 
 const Home = () => {

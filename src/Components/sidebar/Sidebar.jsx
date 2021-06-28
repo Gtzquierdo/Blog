@@ -1,5 +1,5 @@
 import './sidebar.css';
-import propic from '../../assets/propic.png';
+
 
 const Sidebar = () => {
     return (
