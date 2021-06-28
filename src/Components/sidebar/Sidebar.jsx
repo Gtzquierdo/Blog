@@ -1,11 +1,12 @@
 import './sidebar.css';
+import propic from '../../assets/propic.png';
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebarItem">
                 <span className="sidebarTitle">About Me</span>
-                <img src="" alt=""/>
+                <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="AboutMePic"/>
                 <p>
                     Cillum veniam consequat cillum in irure anim est consequat deserunt anim Lorem. Consectetur aliquip consectetur esse esse cillum. Dolor veniam in Lorem proident. 
                 </p>

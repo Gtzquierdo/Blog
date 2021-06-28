@@ -1,4 +1,5 @@
 import './navbar.css';
+import propic from '../../assets/propic.png';
 
 const NavBar = () => {
     return (
@@ -18,7 +19,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navRight">
-                    <img src="" alt="profilePic"></img>
+                    <img className="navImg" src={propic} alt="profilePic"></img>
                     <i className="navSearchIcon fas fa-search"></i>
                 </div>
             </div>
