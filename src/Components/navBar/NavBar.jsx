@@ -14,7 +14,7 @@ const NavBar = () => {
                         <li className="navListItem">HOME</li>
                         <li className="navListItem">ABOUT</li>
                         <li className="navListItem">CONTACT</li>
-                        <li className="navListItem">WRITE</li>
+                        <li className="navListItem">CREATE</li>
                         <li className="navListItem">LOGOUT</li>
                     </ul>
                 </div>
