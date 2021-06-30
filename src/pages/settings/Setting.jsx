@@ -20,9 +20,9 @@ const Setting = () => {
                     <input type="file" id="fileInput" style={{display:"none"}}/>
                 </div>
                 <label>Username</label>
-                <input type="text" placeholder="Giancarlo" />
+                <input type="text" placeholder="Username" />
                 <label>Email</label>
-                <input type="email" placeholder="giancarlo@gmail.com" />
+                <input type="email" placeholder="email@emailaddress.com" />
                 <label>Password</label>
                 <input type="password"  />
                 <button className="settingsSubmit">Update</button>
