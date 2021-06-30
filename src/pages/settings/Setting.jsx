@@ -17,18 +17,18 @@ const Setting = () => {
                     <label htmlFor="fileInput">
                         <i className="settingsProPicIcon far fa-user-circle"></i>
                     </label>
-                    <input type="file" id="fileInput" style={{display:"none"}}/>
+                    <input className="settingsProPicInput" type="file" id="fileInput" style={{display:"none"}}/>
                 </div>
                 <label>Username</label>
-                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Username" name="name"/>
                 <label>Email</label>
-                <input type="email" placeholder="email@emailaddress.com" />
+                <input type="email" placeholder="email@emailaddress.com" name="email" />
                 <label>Password</label>
-                <input type="password"  />
-                <button className="settingsSubmit">Update</button>
+                <input type="password"  placeholder="Password" name="password"/>
+                <button className="settingsSubmit" type="submit">Update</button>
             </form>
         </div>
-            
+        <Sidebar />
         </div>
     );
 }
