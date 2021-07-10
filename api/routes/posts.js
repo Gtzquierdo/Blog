@@ -8,6 +8,8 @@ router.post("/", async (req, res) => {
     try {
         const savedPost =  newPost.save();
         res.status(200).json(newPost);
+    } catch (err) {
+        res.status(500).json(err);
     }
 });
 
