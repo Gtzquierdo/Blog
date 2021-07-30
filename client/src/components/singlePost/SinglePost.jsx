@@ -3,14 +3,14 @@ import './singlePost.css';
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
-// import { Context } from "../../context/Context";
+import { Context } from "../../context/Context";
 
 const SinglePost = (SinglePost) => {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
     const PF = "http://localhost:5000/images/";
-    // const { user } = useContext(Context);
+    const { user } = useContext(Context);
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [updateMode, setUpdateMode] = useState(false);

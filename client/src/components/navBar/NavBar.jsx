@@ -1,9 +1,16 @@
 import './navbar.css';
-import propic from '../../assets/propic.png';
+// import propic from '../../assets/propic.png';
 import { Link } from 'react-router-dom';
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 
 const NavBar = () => {
-    const user = true;
+    const { user, dispatch } = useContext(Context);
+    const PF = "http://localhost:5000/images/";
+
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+    };
     return ( 
         <div className="navbar">
             <div className="navLeft">
@@ -24,7 +31,7 @@ const NavBar = () => {
             {
                 user ? (
                     <Link className="link" to='/settings'>
-                        <img className="navImg" src={propic} alt="profilePic"></img>
+                        <img className="navImg" src={PF+user.profilePic} alt="profilePic" />
                     </Link>
                 ) : (
                     <ul className="navList">
